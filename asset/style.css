@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jumbotron-backdrop {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.content {
+    color: #ffffff;
+    max-width: 800px;
+    z-index: 1;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.content p {
+    font-size: 1.25rem;
+    margin-bottom: 35px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #0066cc;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cta:hover {
+    background-color: #004c99;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1.1rem;
+    }
+
+    .btn-cta {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+.navbar {
+    background-color: #000000bc;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+}
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.swiper-slide {
+  height: auto; 
+}
+
+.pamer-teknologi {
+  background-image: url('asset/kota_gelap.jpg'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.pamer-teknologi .teks-keterbacaan {
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+}
+
+.pamer-teknologi .card {
+  border-radius: 15px; 
+  border: none;
+}
