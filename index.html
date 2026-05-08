@@ -56,18 +56,21 @@
       </div>
     </div>
     
-
-    <div class="row min-vh-100 mt-5 pt-5 m-0 bg-light">
-      <div class="col-12 col-lg-6 p-4 p-lg-5" style="font-family:sans-serif; font-size: 18px;">
-        <h1 class="mb-5">Layanan </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat pariatur at consectetur
+    <!-- Struktur Bootstrap yang sudah kita terapkan -->
+    <div class="container-fluid p-0">
+      <div class="row bg-light gx-0"> <!-- gx-0 adalah utility Bootstrap untuk menghilangkan gutter -->
+        <div class="col-12 col-lg-6 p-4 p-lg-5">
+          <!-- Konten Teks -->
+           <h1 class="mb-5">Layanan </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat pariatur at consectetur
           magnam, nihil explicabo architecto ducimus exercitationem, eligendi quos expedita esse optio voluptatibus
           quis! Quasi aspernatur placeat ea.
           Illum nulla aliquam maiores veritatis distinctio voluptates necessitatibus laudantium totam illo officia nihil
           aspernatur soluta laboriosam, eaque ea beatae minima architecto eveniet?</p>
-      </div>
-      <div class="col-12 mt-5 col-lg-6 p-0 h-100">
-        <img src="asset/service.jpg" alt="" class="w-100" style="object-fit: cover; min-height: 50vh; height: 100%;">
+        </div>
+        <div class="col-12 col-lg-6 h-100">
+          <img src="asset/service.jpg" alt="" class="w-100" style="object-fit: cover; min-height: 50vh; height: 100%;"> <!-- Gunakan img-fluid agar gambar responsif -->
+        </div>
       </div>
     </div>
 
@@ -135,7 +138,7 @@
       </div>
     </div>
 
-    <div class="row min-vh-100 align-items-center m-0 flex-column-reverse flex-lg-row">
+    <div class="row min-vh-100 align-items-center m-0 flex-column-reverse flex-lg-row bg-light">
       <div class="col-12 col-lg-6 p-0 h-100">
         <img src="asset/bg.jpg" alt="" class="w-100" style="object-fit: cover; min-height: 50vh; height: 100%;">
       </div>
@@ -147,6 +150,50 @@
           nihil aspernatur soluta laboriosam, eaque ea beatae minima architecto eveniet?</p>
       </div>
     </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer style="background-color: #1a1a1a; font-family: 'Times New Roman', Times, serif;">
+      <!-- Container untuk padding atas dan bawah -->
+      <div class="container pt-5 pb-4">
+        
+        <!-- Ikon Media Sosial -->
+        <div class="d-flex justify-content-center mb-4 gap-3">
+          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+
+        <!-- Navigasi Link -->
+        <div class="d-flex justify-content-center flex-wrap gap-4 mb-2">
+          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">Home</a>
+          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">News</a>
+          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">About</a>
+          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">Contact Us</a>
+          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">Our Team</a>
+        </div>
+      </div>
+
+      <!-- Copyright?? -->
+      <div class="text-center p-3 text-white" style="background-color: #000000; font-size: 14px;">
+        Copyright ©2026; Designed by 
+        <a href="https://github.com/andikamch" class="text-decoration-none text-white fw-bold" style="opacity: 0.8;">@andikamch</a>
+        <a>&</a>
+        <a href="https://github.com/MuhRizkiP" class="text-decoration-none text-white fw-bold" style="opacity: 0.8;">@IkuZiR</a>
+      </div>
+    </footer>
+    <!-- ================= AKHIR FOOTER ================= -->
 
   </div>
 
