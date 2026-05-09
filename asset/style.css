@@ -127,3 +127,54 @@
   border-radius: 15px; 
   border: none;
 }
+
+/* =========================================
+   ANIMASI HOVER LOGO NAVBAR
+   ========================================= */
+
+/* Wadah utama untuk logo dan teks */
+.brand-container {
+    display: flex;
+    align-items: center; /* Membuat logo dan teks sejajar di tengah secara vertikal */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    overflow: hidden; /* Penting: Menyembunyikan elemen yang keluar dari batas wadah */
+}
+
+/* Desain untuk logo asli */
+.brand-logo {
+    width: 60px;  /* Angka ini diperbesar dari 40px menjadi 60px */
+    height: 60px; /* Angka ini diperbesar dari 40px menjadi 60px */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 2;
+}
+
+/* Desain awal teks nama perusahaan (disembunyikan) */
+.brand-text {
+    max-width: 0; /* Lebar 0 agar tidak terlihat memakan tempat */
+    opacity: 0; /* Transparan sepenuhnya */
+    transform: translateX(-20px); /* Posisi awal digeser ke kiri sejauh 20px */
+    transition: all 0.5s ease; /* Kunci Animasi: perubahan berlangsung selama 0.5 detik dengan efek halus */
+    white-space: nowrap; /* Mencegah teks turun ke baris bawah jika terlalu panjang */
+    color: white; /* Warna teks */
+    font-weight: bold;
+    margin-left: 0;
+}
+
+/* Efek ketika area .brand-container disentuh mouse (hover) */
+.brand-container:hover .brand-text {
+    max-width: 250px; /* Lebar diperbesar agar teks muat (sesuaikan dengan panjang nama perusahaanmu) */
+    opacity: 1; /* Teks muncul sepenuhnya */
+    transform: translateX(0); /* Teks bergeser kembali ke posisi normal (dari kiri ke kanan) */
+    margin-left: 10px; /* Memberi jarak antara logo dan teks */
+}
+
+/* Membuat efek gulir menjadi halus */
+html {
+  scroll-behavior: smooth;
+  /* Memberi jarak atas agar konten tidak tertutup navbar fixed-top saat di-klik */
+  scroll-padding-top: 80px; 
+}
