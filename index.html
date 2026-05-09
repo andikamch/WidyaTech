@@ -7,38 +7,57 @@
   <link rel="stylesheet" href="asset/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <title>Welcome To Widya Inovasi Industry</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#main-navbar" tabindex="0">
   <div class="container-fluid p-0">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-4 px-lg-5"> <!-- Tambah bg-dark sementara agar terlihat saat digulir -->
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-4 px-lg-5">
+      
+      <!-- Bagian Kiri: Logo dan Teks dengan Animasi Hover -->
+      <!-- Kita menambahkan class 'brand-container' di sini -->
+      <a class="navbar-brand brand-container" href="#">
+        <div class="brand-logo">
+          <!-- Ganti 'nama-file-logomu.png' dengan nama file yang sebenarnya -->
+          <img src="asset/logo-kita.png" alt="Logo Perusahaan" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+        </div>
+        <!-- Teks yang akan muncul saat di-hover -->
+        <span class="brand-text">Widya Inovasi Industry</span>
+      </a>
+
+      <!-- Tombol Toggler untuk mode Mobile (HP) -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Bagian Kanan: Menu Navigasi -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto"> 
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <!-- Arahkan ke id="home" -->
+            <a class="nav-link active" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <!-- Arahkan ke id="about" -->
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <!-- Arahkan ke id="layanan" -->
+            <a class="nav-link" href="#layanan">Layanan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <!-- Arahkan ke id="team" -->
+            <a class="nav-link" href="#team">Team Kami</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <!-- HEADER / JUMBOTRON -->
-    <header class="jumbotron-backdrop vh-100 d-flex align-items-center">
+    <header id="home" class="jumbotron-backdrop vh-100 d-flex align-items-center">
       <div class="overlay w-100">
         <div class="content text-center text-white px-3">
           <h1>Widya Inovasi Industry</h1>
@@ -48,7 +67,7 @@
       </div>
     </header>
 
-    <div class="row min-vh-100 m-0">
+    <div id="about" class="row min-vh-100 m-0">
       <div class="col-12 p-4 p-lg-5 mt-5 pt-5" style="font-family:sans-serif; font-size: 18px;">
         <h1 class="text-center mb-5">About Us</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum est praesentium eaque optio dolores, dolorum debitis recusandae maxime quos, aperiam nobis voluptatibus quidem. Autem et velit placeat? Maiores, similique fugit?
@@ -57,7 +76,7 @@
     </div>
     
     <!-- Struktur Bootstrap yang sudah kita terapkan -->
-    <div class="container-fluid p-0">
+    <div id="layanan" class="container-fluid p-0">
       <div class="row bg-light gx-0"> <!-- gx-0 adalah utility Bootstrap untuk menghilangkan gutter -->
         <div class="col-12 col-lg-6 p-4 p-lg-5">
           <!-- Konten Teks -->
@@ -168,11 +187,11 @@
             <i class="fab fa-twitter"></i>
           </a>
           <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
-            <i class="fab fa-google-plus-g"></i>
+            <i class="fa-solid fa-envelope"></i>
           </a>
-          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
+          <!-- <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
             <i class="fab fa-youtube"></i>
-          </a>
+          </a> -->
         </div>
 
         <!-- Navigasi Link -->
