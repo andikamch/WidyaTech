@@ -10,18 +10,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <title>Welcome To Widya Inovasi Industry</title>
+  <meta name="description" content="Membangun solusi inovatif dan terpercaya untuk membawa bisnis Anda menuju masa depan yang lebih cemerlang.">
+  <meta name="theme-color" content="#000000">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#main-navbar" tabindex="0">
   <div class="container-fluid p-0">
     <!-- NAVBAR -->
-    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-4 px-lg-5">
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-3 px-lg-4">
       
       <!-- Bagian Kiri: Logo dan Teks dengan Animasi Hover -->
-      <!-- Kita menambahkan class 'brand-container' di sini -->
-      <a class="navbar-brand brand-container" href="#">
+      <a class="navbar-brand brand-container me-3" href="#">
         <div class="brand-logo">
-          <!-- Ganti 'nama-file-logomu.png' dengan nama file yang sebenarnya -->
           <img src="asset/logo-kita.png" alt="Logo Perusahaan" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
         </div>
         <!-- Teks yang akan muncul saat di-hover -->
@@ -35,21 +35,17 @@
 
       <!-- Bagian Kanan: Menu Navigasi -->
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto"> 
+        <ul class="navbar-nav ms-auto gap-2"> 
           <li class="nav-item">
-            <!-- Arahkan ke id="home" -->
             <a class="nav-link active" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <!-- Arahkan ke id="about" -->
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <!-- Arahkan ke id="layanan" -->
             <a class="nav-link" href="#layanan">Layanan</a>
           </li>
           <li class="nav-item">
-            <!-- Arahkan ke id="team" -->
             <a class="nav-link" href="#team">Team Kami</a>
           </li>
         </ul>
@@ -68,8 +64,8 @@
     </header>
 
     <div id="about" class="row min-vh-100 m-0">
-      <div class="col-12 p-4 p-lg-5 mt-5 pt-5" style="font-family:sans-serif; font-size: 18px;">
-        <h1 class="text-center mb-5">About Us</h1>
+      <div class="col-12 p-3 p-sm-4 p-lg-5 mt-5 pt-5" style="font-family:sans-serif;">
+        <h1 class="text-center mb-4 mb-lg-5">About Us</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum est praesentium eaque optio dolores, dolorum debitis recusandae maxime quos, aperiam nobis voluptatibus quidem. Autem et velit placeat? Maiores, similique fugit?
         Sed neque ratione saepe perferendis quos doloremque molestiae quae aut maiores facilis ipsa inventore ad numquam, dicta placeat quis nostrum provident voluptatum voluptate soluta autem iure harum impedit delectus. Fugiat.</p>
       </div>
@@ -77,10 +73,10 @@
     
     <!-- Struktur Bootstrap yang sudah kita terapkan -->
     <div id="layanan" class="container-fluid p-0">
-      <div class="row bg-light gx-0"> <!-- gx-0 adalah utility Bootstrap untuk menghilangkan gutter -->
-        <div class="col-12 col-lg-6 p-4 p-lg-5">
+      <div class="row bg-light gx-0">
+        <div class="col-12 col-lg-6 p-3 p-sm-4 p-lg-5">
           <!-- Konten Teks -->
-           <h1 class="mb-5">Layanan </h1>
+          <h1 class="mb-3 mb-lg-5">Layanan</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat pariatur at consectetur
           magnam, nihil explicabo architecto ducimus exercitationem, eligendi quos expedita esse optio voluptatibus
           quis! Quasi aspernatur placeat ea.
@@ -88,27 +84,27 @@
           aspernatur soluta laboriosam, eaque ea beatae minima architecto eveniet?</p>
         </div>
         <div class="col-12 col-lg-6 h-100">
-          <img src="asset/service.jpg" alt="" class="w-100" style="object-fit: cover; min-height: 50vh; height: 100%;"> <!-- Gunakan img-fluid agar gambar responsif -->
+          <img src="asset/service.jpg" alt="Layanan Kami" class="w-100 h-100" style="object-fit: cover; min-height: 300px;">
         </div>
       </div>
     </div>
 
-    <div class="row min-vh-100 align-items-center m-0 py-5">
+    <div class="row min-vh-100 align-items-center m-0 py-3 py-lg-5">
       <div class="col-12 p-0">
         <div class="container">
-          <div class="row mb-5 text-center">
+          <div class="row mb-3 mb-lg-5 text-center">
             <div class="col-12">
-              <h2 class="fw-bold">Mengapa Memilih Kami?</h2>
+              <h2 class="fw-bold mb-3 mb-lg-4">Mengapa Memilih Kami?</h2>
               <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, est debitis? Impedit, labore? Possimus, recusandae explicabo reiciendis asperiores perferendis, magni assumenda similique provident sapiente aspernatur minus maiores culpa quisquam molestias?</p>
             </div>
           </div>
 
-          <div class="swiper glideSwiper py-3">
+          <div class="swiper glideSwiper py-2 py-lg-3">
             <div class="swiper-wrapper">
 
               <div class="swiper-slide">
-                <div class="card h-100 shadow-sm border-0 text-center p-3">
-                  <img src="asset/time-left.png" class="card-img-top mx-auto mt-3" alt="Java" style="width: 80px;">
+                <div class="card h-100 shadow-sm border-0 text-center p-2 p-lg-3">
+                  <img src="asset/time-left.png" class="card-img-top mx-auto mt-2 mt-lg-3" alt="Fast Response" style="width: clamp(60px, 12vw, 80px);">
                   <div class="card-body">
                     <h5 class="card-title fw-bold mt-2">Fast Response</h5>
                   </div>
@@ -116,8 +112,8 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="card h-100 shadow-sm border-0 text-center p-3">
-                  <img src="asset/customer-service.png" class="card-img-top mx-auto mt-3" alt="JS" style="width: 80px;">
+                <div class="card h-100 shadow-sm border-0 text-center p-2 p-lg-3">
+                  <img src="asset/customer-service.png" class="card-img-top mx-auto mt-2 mt-lg-3" alt="Tim Profesional" style="width: clamp(60px, 12vw, 80px);">
                   <div class="card-body">
                     <h5 class="card-title fw-bold mt-2">Tim Profesional</h5>
                   </div>
@@ -125,8 +121,8 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="card h-100 shadow-sm border-0 text-center p-3">
-                  <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" class="card-img-top mx-auto mt-3" alt="Java" style="width: 80px;">
+                <div class="card h-100 shadow-sm border-0 text-center p-2 p-lg-3">
+                  <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" class="card-img-top mx-auto mt-2 mt-lg-3" alt="Harga kompetitif" style="width: clamp(60px, 12vw, 80px);">
                   <div class="card-body">
                     <h5 class="card-title fw-bold mt-2">Harga kompetitif</h5>
                   </div>
@@ -134,8 +130,8 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="card h-100 shadow-sm border-0 text-center p-3">
-                  <img src="asset/time-left.png" class="card-img-top mx-auto mt-3" alt="PHP" style="width: 80px;">
+                <div class="card h-100 shadow-sm border-0 text-center p-2 p-lg-3">
+                  <img src="asset/time-left.png" class="card-img-top mx-auto mt-2 mt-lg-3" alt="Pengerjaan Tepat Waktu" style="width: clamp(60px, 12vw, 80px);">
                   <div class="card-body">
                     <h5 class="card-title fw-bold mt-2">Pengerjaan Tepat Waktu</h5>
                   </div>
@@ -143,8 +139,8 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="card h-100 shadow-sm border-0 text-center p-3">
-                  <img src="asset/customer-service.png" class="card-img-top mx-auto mt-3" alt="C++" style="width: 80px;">
+                <div class="card h-100 shadow-sm border-0 text-center p-2 p-lg-3">
+                  <img src="asset/customer-service.png" class="card-img-top mx-auto mt-2 mt-lg-3" alt="Komunikasi Transparan" style="width: clamp(60px, 12vw, 80px);">
                   <div class="card-body">
                     <h5 class="card-title fw-bold mt-2">Komunikasi Transparan</h5>
                   </div>
@@ -159,9 +155,9 @@
 
     <div class="row min-vh-100 align-items-center m-0 flex-column-reverse flex-lg-row bg-light">
       <div class="col-12 col-lg-6 p-0 h-100">
-        <img src="asset/bg.jpg" alt="" class="w-100" style="object-fit: cover; min-height: 50vh; height: 100%;">
+        <img src="asset/bg.jpg" alt="Background Image" class="w-100 h-100" style="object-fit: cover; min-height: 300px;">
       </div>
-      <div class="col-12 col-lg-6 p-4 p-lg-5" style="font-family:sans-serif; font-size: 18px;">
+      <div class="col-12 col-lg-6 p-3 p-sm-4 p-lg-5" style="font-family:sans-serif;">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat pariatur at consectetur
           magnam, nihil explicabo architecto ducimus exercitationem, eligendi quos expedita esse optio voluptatibus
           quis! Quasi aspernatur placeat ea.
@@ -173,39 +169,36 @@
     <!-- ================= FOOTER ================= -->
     <footer style="background-color: #1a1a1a; font-family: 'Times New Roman', Times, serif;">
       <!-- Container untuk padding atas dan bawah -->
-      <div class="container pt-5 pb-4">
+      <div class="container pt-3 pt-lg-5 pb-3 pb-lg-4">
         
         <!-- Ikon Media Sosial -->
-        <div class="d-flex justify-content-center mb-4 gap-3">
-          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
+        <div class="d-flex justify-content-center mb-3 mb-lg-4 gap-2 gap-lg-3 flex-wrap">
+          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle" style="width: clamp(40px, 8vw, 45px); height: clamp(40px, 8vw, 45px); text-decoration: none; font-size: clamp(0.9rem, 2vw, 1.25rem);">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
+          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle" style="width: clamp(40px, 8vw, 45px); height: clamp(40px, 8vw, 45px); text-decoration: none; font-size: clamp(0.9rem, 2vw, 1.25rem);">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
+          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle" style="width: clamp(40px, 8vw, 45px); height: clamp(40px, 8vw, 45px); text-decoration: none; font-size: clamp(0.9rem, 2vw, 1.25rem);">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
+          <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle" style="width: clamp(40px, 8vw, 45px); height: clamp(40px, 8vw, 45px); text-decoration: none; font-size: clamp(0.9rem, 2vw, 1.25rem);">
             <i class="fa-solid fa-envelope"></i>
           </a>
-          <!-- <a href="#" class="bg-white text-dark d-flex align-items-center justify-content-center rounded-circle fs-5" style="width: 45px; height: 45px; text-decoration: none;">
-            <i class="fab fa-youtube"></i>
-          </a> -->
         </div>
 
         <!-- Navigasi Link -->
-        <div class="d-flex justify-content-center flex-wrap gap-4 mb-2">
-          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">Home</a>
-          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">News</a>
-          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">About</a>
-          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">Contact Us</a>
-          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">Our Team</a>
+        <div class="d-flex justify-content-center flex-wrap gap-2 gap-lg-4 mb-2">
+          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8; font-size: clamp(0.85rem, 2vw, 1rem);">Home</a>
+          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8; font-size: clamp(0.85rem, 2vw, 1rem);">News</a>
+          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8; font-size: clamp(0.85rem, 2vw, 1rem);">About</a>
+          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8; font-size: clamp(0.85rem, 2vw, 1rem);">Contact Us</a>
+          <a href="#" class="text-white text-decoration-none" style="opacity: 0.8; font-size: clamp(0.85rem, 2vw, 1rem);">Our Team</a>
         </div>
       </div>
 
-      <!-- Copyright?? -->
-      <div class="text-center p-3 text-white" style="background-color: #000000; font-size: 14px;">
+      <!-- Copyright -->
+      <div class="text-center p-2 p-lg-3 text-white" style="background-color: #000000; font-size: clamp(0.75rem, 2vw, 0.875rem);">
         Copyright ©2026; Designed by 
         <a href="https://github.com/andikamch" class="text-decoration-none text-white fw-bold" style="opacity: 0.8;">@andikamch</a>
         <a>&</a>
@@ -222,21 +215,106 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   
   <script>
+    // ============================================
+    // NAVBAR MOBILE FUNCTIONALITY
+    // ============================================
+    
+    // Get navbar elements
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarNav');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const brandText = document.querySelector('.brand-text');
+    const brandContainer = document.querySelector('.brand-container');
+    const mainNavbar = document.getElementById('main-navbar');
+
+    // Function to close navbar
+    function closeNavbar() {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false
+      });
+      bsCollapse.hide();
+    }
+
+    // Function to check if device is mobile
+    function isMobile() {
+      return window.innerWidth < 992; // lg breakpoint
+    }
+
+    // Toggle brand text on navbar toggle (Mobile only)
+    if (navbarToggler) {
+      navbarToggler.addEventListener('click', function() {
+        if (isMobile()) {
+          brandText.classList.toggle('show-on-mobile');
+        }
+      });
+    }
+
+    // Close navbar and hide brand text when clicking nav links
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        closeNavbar();
+        if (isMobile()) {
+          brandText.classList.remove('show-on-mobile');
+        }
+      });
+    });
+
+    // Hide brand text and close navbar when clicking outside on mobile
+    document.addEventListener('click', function(event) {
+      if (isMobile()) {
+        const isClickInsideNavbar = mainNavbar.contains(event.target);
+        
+        if (!isClickInsideNavbar && navbarCollapse.classList.contains('show')) {
+          closeNavbar();
+          brandText.classList.remove('show-on-mobile');
+        }
+      }
+    });
+
+    // Reset on window resize
+    window.addEventListener('resize', function() {
+      if (!isMobile()) {
+        brandText.classList.remove('show-on-mobile');
+      }
+    });
+
+    // ============================================
+    // SWIPER INITIALIZATION
+    // ============================================
+    
     const swiper = new Swiper('.glideSwiper', {
       loop: true,
       freeMode: true,
-      spaceBetween: 30,
+      spaceBetween: clamp(10, 2, 30),
       speed: 3000,
       autoplay: {
         delay: 0,
         disableOnInteraction: false,
       },
       breakpoints: {
-        0: { slidesPerView: 2 },
-        768: { slidesPerView: 3 },
-        1024: { slidesPerView: 4 }
+        0: { 
+          slidesPerView: 1,
+          spaceBetween: 10 
+        },
+        480: { 
+          slidesPerView: 2,
+          spaceBetween: 15
+        },
+        768: { 
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        1024: { 
+          slidesPerView: 4,
+          spaceBetween: 30
+        }
       }
     });
+
+    // Helper function untuk responsive spacing
+    function clamp(min, preferred, max) {
+      return Math.max(min, Math.min(preferred, max));
+    }
   </script>
 </body>
 

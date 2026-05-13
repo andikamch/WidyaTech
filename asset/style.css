@@ -5,6 +5,31 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ==========================================
+   RESPONSIVE TYPOGRAPHY UTILITIES
+   ========================================== */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+}
+
 .jumbotron-backdrop {
     position: relative;
     width: 100%;
@@ -13,6 +38,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .overlay {
@@ -26,37 +54,38 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 1rem;
 }
 
 .content {
     color: #ffffff;
-    max-width: 800px;
+    max-width: 90%;
+    width: 100%;
     z-index: 1;
     animation: fadeIn 1.5s ease-in-out;
 }
 
 .content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
+    margin-bottom: 1.5rem;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 .content p {
-    font-size: 1.25rem;
-    margin-bottom: 35px;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    margin-bottom: 2rem;
     line-height: 1.6;
     color: #e0e0e0;
 }
 
 .btn-cta {
     display: inline-block;
-    padding: 15px 35px;
+    padding: clamp(10px, 2vw, 15px) clamp(20px, 4vw, 35px);
     background-color: #0066cc;
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -79,102 +108,306 @@
     }
 }
 
+/* Responsive adjustments for very small devices */
+@media (max-width: 480px) {
+    .content {
+        max-width: 95%;
+    }
+}
+
+/* Tablet adjustments */
 @media (max-width: 768px) {
-    .content h1 {
-        font-size: 2.5rem;
-    }
-
-    .content p {
-        font-size: 1.1rem;
-    }
-
-    .btn-cta {
-        padding: 12px 25px;
-        font-size: 1rem;
+    .content {
+        max-width: 85%;
     }
 }
 
 .navbar {
     background-color: #000000bc;
+    padding: 0.5rem 1rem !important;
+    z-index: 1030;
+}
+
+.navbar-brand {
+    padding: 0 !important;
+}
+
+.navbar-toggler {
+    cursor: pointer;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar-collapse {
+    z-index: 100;
+}
+
+.navbar-collapse.show {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .swiper {
     width: 100%;
-    height: 300px;
+    padding: 1rem 0;
 }
+
 .swiper-wrapper {
-  -webkit-transition-timing-function: linear !important;
-  transition-timing-function: linear !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
 }
 
 .swiper-slide {
-  height: auto; 
+    height: auto;
+    padding: 0.5rem;
+}
+
+.card {
+    min-height: 100%;
+}
+
+/* Responsive image container */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .pamer-teknologi {
-  background-image: url('asset/kota_gelap.jpg'); 
-  background-size: cover;
-  background-position: center;
-  position: relative;
+    background-image: url('asset/kota_gelap.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .pamer-teknologi .teks-keterbacaan {
-  color: white !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .pamer-teknologi .card {
-  border-radius: 15px; 
-  border: none;
+    border-radius: 15px;
+    border: none;
 }
 
 /* =========================================
-   ANIMASI HOVER LOGO NAVBAR
+   ANIMASI HOVER LOGO NAVBAR - RESPONSIVE
    ========================================= */
 
 /* Wadah utama untuk logo dan teks */
 .brand-container {
     display: flex;
-    align-items: center; /* Membuat logo dan teks sejajar di tengah secara vertikal */
-    text-decoration: none; /* Menghilangkan garis bawah pada link */
-    overflow: hidden; /* Penting: Menyembunyikan elemen yang keluar dari batas wadah */
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 /* Desain untuk logo asli */
 .brand-logo {
-    width: 60px;  /* Angka ini diperbesar dari 40px menjadi 60px */
-    height: 60px; /* Angka ini diperbesar dari 40px menjadi 60px */
+    width: clamp(40px, 8vw, 60px);
+    height: clamp(40px, 8vw, 60px);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     z-index: 2;
+    flex-shrink: 0;
 }
 
 /* Desain awal teks nama perusahaan (disembunyikan) */
 .brand-text {
-    max-width: 0; /* Lebar 0 agar tidak terlihat memakan tempat */
-    opacity: 0; /* Transparan sepenuhnya */
-    transform: translateX(-20px); /* Posisi awal digeser ke kiri sejauh 20px */
-    transition: all 0.5s ease; /* Kunci Animasi: perubahan berlangsung selama 0.5 detik dengan efek halus */
-    white-space: nowrap; /* Mencegah teks turun ke baris bawah jika terlalu panjang */
-    color: white; /* Warna teks */
+    max-width: 0;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.5s ease;
+    white-space: nowrap;
+    color: white;
     font-weight: bold;
     margin-left: 0;
+    font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
-/* Efek ketika area .brand-container disentuh mouse (hover) */
-.brand-container:hover .brand-text {
-    max-width: 250px; /* Lebar diperbesar agar teks muat (sesuaikan dengan panjang nama perusahaanmu) */
-    opacity: 1; /* Teks muncul sepenuhnya */
-    transform: translateX(0); /* Teks bergeser kembali ke posisi normal (dari kiri ke kanan) */
-    margin-left: 10px; /* Memberi jarak antara logo dan teks */
+/* Efek ketika area .brand-container disentuh mouse (hover) - Desktop only */
+@media (min-width: 992px) {
+    .brand-container:hover .brand-text {
+        max-width: 250px;
+        opacity: 1;
+        transform: translateX(0);
+        margin-left: 10px;
+    }
+}
+
+/* Mobile: Tampilkan text saat tombol navbar diklik */
+@media (max-width: 991px) {
+    .brand-text.show-on-mobile {
+        max-width: 180px;
+        opacity: 1;
+        transform: translateX(0);
+        margin-left: 10px;
+    }
 }
 
 /* Membuat efek gulir menjadi halus */
 html {
-  scroll-behavior: smooth;
-  /* Memberi jarak atas agar konten tidak tertutup navbar fixed-top saat di-klik */
-  scroll-padding-top: 80px; 
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* ==========================================
+   RESPONSIVE CONTAINERS AND SPACING
+   ========================================== */
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    html {
+        scroll-padding-top: 60px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE TEXT AND HEADING SIZES
+   ========================================== */
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+}
+
+h2 {
+    font-size: clamp(1.25rem, 3.5vw, 2.5rem);
+    margin-bottom: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+h5 {
+    font-size: clamp(0.9rem, 2vw, 1.25rem);
+}
+
+p {
+    font-size: clamp(0.95rem, 2vw, 1.05rem);
+    line-height: 1.6;
+}
+
+/* ==========================================
+   RESPONSIVE COLUMNS AND ROWS
+   ========================================== */
+
+.row {
+    --bs-gutter-x: clamp(0.5rem, 2vw, 1.5rem);
+    --bs-gutter-y: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+@media (max-width: 768px) {
+    .row {
+        --bs-gutter-x: 0.75rem;
+        --bs-gutter-y: 0.75rem;
+    }
+}
+
+/* Responsive padding */
+.p-4 {
+    padding: clamp(1rem, 4vw, 1.5rem) !important;
+}
+
+.p-lg-5 {
+    padding: clamp(1.5rem, 4vw, 3rem) !important;
+}
+
+/* ==========================================
+   UTILITY MEDIA QUERIES FOR MOBILE-FIRST DESIGN
+   ========================================== */
+
+/* Extra Small Devices (< 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.3rem 0.5rem !important;
+    }
+
+    .navbar-brand {
+        margin-right: 0.5rem !important;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0.75rem !important;
+        font-size: 0.9rem;
+    }
+
+    .min-vh-100 {
+        min-height: auto !important;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* Small Devices (480px - 768px) */
+@media (min-width: 480px) and (max-width: 767px) {
+    .navbar {
+        padding: 0.4rem 0.75rem !important;
+    }
+
+    .min-vh-100 {
+        min-height: auto !important;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+/* Medium Devices (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        padding: 0.5rem 1rem !important;
+    }
+}
+
+/* Touch device optimization */
+@media (hover: none) and (pointer: coarse) {
+    .brand-container:hover .brand-text {
+        max-width: 0;
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    footer,
+    .btn {
+        display: none;
+    }
 }
